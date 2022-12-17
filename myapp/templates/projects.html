@@ -1,1 +1,11 @@
 <h1>Projects</h1>
+
+<h3>Project values list </h3>
+<ul>
+<!-- for -->
+    {% for item in projects %}
+        <li>{{ item.name }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Project.object.all</h3>
