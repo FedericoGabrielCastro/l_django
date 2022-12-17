@@ -12,6 +12,7 @@ class Task(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     project = models.ForeignKey(Projects, on_delete=models.CASCADE)
+    done = models.BooleanField(default=False)
 
     # Extend this class to django admin.
     def __str__(self) -> str:

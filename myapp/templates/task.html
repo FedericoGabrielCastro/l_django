@@ -2,8 +2,24 @@
 
 <ul>
     <!-- for -->
-        {% for item in task %}
-            <li>{{ item.title }}</li>
-        {% endfor %}
-    </ul>
+    {% for item in task %}
+        <li>{{ item.title }} </li>
+        
+        <!-- Conditional -->
+        {% if item.done == False %}
+        <p>taks realized</p>
+        {% else %}
+        <p>task in progrses</p>
+        {% endif %}
+
+        <button>
+            Delete task
+        </button>
+        <button>
+            ✅ Done
+        </button>
+    {% endfor %}
+</ul>
     
+
+{# Comment this form to not show the comment in console. #}
