@@ -2,16 +2,14 @@
 
 {% block content %}
 {% load get_all_projects %}
+{% load cut_str %}
 
 <h1>Template tags</h1>
 
 <h2>Total projects: {% total_projects %}</h2>
 
-<ul>
-    <!-- for -->
-    {% for item in projects %}
-        <li>{{ item.name }}</li> 
-    {% endfor %}
-</ul>
+<p> cut an string: {{ "federico"|cut_str:3 }}</p>
+
+
 
 {% endblock %}
