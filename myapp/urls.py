@@ -11,5 +11,6 @@ urlpatterns = [
     # path('task/<int:id>', views.task)
     path('task/', views.task),
     path("create_task/", views.create_task ),
-    path("template_tags", views.template_tags)
+    path("template_tags", views.template_tags),
+    path("wrapwith", views.wrapwith)
 ]

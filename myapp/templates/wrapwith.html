@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load wrapwith %}
+{% block content %}
+
+
+<h1>Django-Wrapwith</h1>
+
+
+{% wrapwith "wrappers/box.html" with color="#337ab5" %}
+    <p>this is inside a blue box</p>
+{% endwrapwith %}
+
+{% wrapwith "wrappers/box.html" with color="#ff0000" %}
+    <p>this is inside a red box</p>
+{% endwrapwith %}
+
+
+{% endblock %}
