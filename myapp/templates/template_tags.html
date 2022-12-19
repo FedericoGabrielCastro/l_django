@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load get_all_projects %}
+
+<h1>Template tags</h1>
+
+<h2>Total projects: {% total_projects %}</h2>
+
+<ul>
+    <!-- for -->
+    {% for item in projects %}
+        <li>{{ item.name }}</li> 
+    {% endfor %}
+</ul>
+
+{% endblock %}

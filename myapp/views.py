@@ -54,3 +54,10 @@ def create_task(request):
             project_id=2
         )
         return redirect("/task/")
+
+def template_tags(request):
+    projects =  Projects.objects.all()
+    
+    return render(request, "template_tags.html", {
+        "projects": projects
+    })
